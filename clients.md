@@ -2,6 +2,7 @@
 layout: page
 title: Clients
 permalink: /clients/
+order: 4
 ---
 Here comes the client listing
 

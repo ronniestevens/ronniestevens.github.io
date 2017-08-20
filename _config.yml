@@ -46,3 +46,8 @@ defaults:
      path: "assets/img"
    values:
      image: true
+
+collections:
+  portfolio:
+     output: true
+     permalink: /:collection/:name
