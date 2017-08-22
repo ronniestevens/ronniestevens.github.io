@@ -1,46 +1,44 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
-
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">© MP - MINIMAL PORTFOLIO
+            <span class="social pull-right">
+                <a href="#x"><i class="fa fa-facebook"></i></a>
+                <a href="#x"><i class="fa fa-twitter"></i></a>
+                <a href="#x"><i class="fa fa-instagram"></i></a>
+            </span>
+        </p>
+    </div><!-- / container -->
 </footer>
+<!-- / footer -->
+
+<!-- javascript -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.easing.min.js"></script>
+
+<!-- portfolio -->
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript">
+// This will create a single gallery from all elements that have class "lightbox"
+$('.lightbox').each(function() {
+    $(this).magnificPopup({
+        delegate: 'a.open-gallery', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+</script>
+<!-- / lightbox -->
+<!-- / portfolio -->
+
+<!-- preloader -->
+<script src="/assets/js/preloader.js"></script>
+<!-- / preloader -->
+
+<!-- / javascript -->
