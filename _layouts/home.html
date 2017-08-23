@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-
+ <!-- header-banner -->
+    <div id="header-banner" class="demo-1">
+        <div class="banner-content text-center">
+            <div class="banner-info">
+                <h1>studio ZOO</h1>
+                <p>Webdevelopment on steroids</p>
+            </div><!-- / banner-info -->
+        </div><!-- / banner-content -->
+    </div>
+    <!-- / header-banner -->
 <section id="portfolio">
     <div class="container">
  <div class="page-header no-margin text-center">
@@ -18,7 +27,7 @@ layout: default
                 <div class="img-bg-color primary">
                     <a href="{{ item.url }}" class="project-link"></a>
                     <!-- / project-link -->
-                    <img src="/assets/images/project.jpg" alt="">
+                    <img src="{{ item.image_path }}" alt="">
                     <!-- / project-image -->
 
                     <!-- project-hover-tools -->
@@ -26,7 +35,7 @@ layout: default
                         <a href="{{ item.url }}" class="view-btn">
                             <i class="lnr lnr-eye"></i>
                         </a>
-                        <a href="/assets/images/project.jpg" class="open-gallery">
+                        <a href="{{ item.image_path }}" class="open-gallery">
                             <i class="lnr lnr-frame-expand"></i>
                         </a>
                     </div><!-- / project-hover-tools -->
@@ -34,7 +43,7 @@ layout: default
                     <!-- project-details -->
                     <div class="project-details">
                         <h5 class="project-title">{{ item.title }}</h5>
-                        <p class="skill">SKILLS</p>
+                        <p class="skill">{{ item.skills }}</p>
                     </div><!-- / project-details -->
                 </div><!-- / img-bg-color -->
             </li>
@@ -63,7 +72,7 @@ layout: default
             <!-- post-block -->
             <div class="col-sm-4">
                 <div class="post-block">
-                    <a href="{{ post.url | relative_url }}"><img src="/assets/images/post-img.jpg" alt=""></a>
+                    <a href="{{ post.url | relative_url }}"><img src="{{ post.image_path }}" alt=""></a>
                     <div class="small-post-text">
                         <h5><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h5>
                         <p class="small-post-meta">{{ post.date | date: date_format }}</p>
