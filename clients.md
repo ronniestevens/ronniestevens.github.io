@@ -1,9 +1,10 @@
 ---
-layout: page
 title: Clients
-permalink: /clients/
+permalink: "/clients/"
+layout: page
 order: 4
 ---
+
 Here comes the client listing
 
 * Ripe NCC

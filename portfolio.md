@@ -1,6 +1,6 @@
 ---
-layout: post
 title: portfolio
+layout: post
 ---
 
 <h3>Testing</h3>

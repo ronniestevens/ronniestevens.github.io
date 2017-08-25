@@ -1,14 +1,14 @@
 ---
-layout: portfolio
 title: Carlos in huis
+layout: portfolio
 client: Carlos in huis
 type: portfolio
-image_path: /assets/images/carlosinhuis_portfolio.jpg
+image_path: "/assets/images/carlosinhuis_portfolio.jpg"
 clienturl: https://www.carlosinhuis.nl
 skills: Django, Wagtail, Python, CMS
 year: 2017
 location: Deventer
-details:
+details: 
 ---
 
 Carlos in huis heeft een frisse nieuwe huisstijl gekregen, ontwikkeld door Peter Kortleve van <a href="http://shortlife.nl">Shortlife</a>.
